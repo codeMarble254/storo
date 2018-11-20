@@ -1,0 +1,106 @@
+/*Import fonts*/
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Condensed');
+
+
+/*
+--------------------------------------------------------
+--------------------------------------------------------
+------------sizing for all page components--------------
+--------------------------------------------------------
+--------------------------------------------------------
+*/
+* {
+    box-sizing: border-box;
+}
+
+*:before,
+*:after {
+box-sizing: border-box;
+}
+
+/*styling for the whole page*/
+html,body{
+    position: relative;
+    font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+/*styling for the main container*/
+
+body {
+    margin:0;
+    min-height: 100vh; /* will cover the 100% of viewport */
+    overflow: auto;
+    display: block;
+    position: relative;
+    width: 100%;
+    padding-bottom: 100px; /* height of your footer */
+}
+/* 
+-------------------------------------------------------
+-------------------------------------------------------
+-----------------Styles for html tags------------------
+-------------------------------------------------------
+-------------------------------------------------------
+*/
+a,p,label,h1,h2,h3,h4,h5,h6{
+    color: #000;
+}
+.fa{
+    color: #000;
+}
+a, a:hover{
+    text-decoration: none;
+}
+
+/* 
+-------------------------------------------------------
+-------------------------------------------------------
+<----------------styling for the header--------------->
+-------------------------------------------------------
+-------------------------------------------------------
+*/
+.navbar{
+    margin: 0;
+}
+.nav-logo{
+    font-size: 28px;
+}
+.nav-menu .navbar-nav{
+    float: right;
+}
+.search-bar, .search-btn{
+    border: none;
+    border-radius: 0;
+    border-bottom: solid 1px silver;
+    background: inherit;
+}
+.search-bar:focus, .search-btn:focus{
+    border: none;
+    border-radius: 0;
+    outline: none;
+    box-shadow: none;
+    border-bottom: solid 1px#000;
+    background: inherit;
+}
+
+/*styling for the section elements*/
+section{
+    width: 100%;
+    padding:60px; 
+    text-align: center;
+}
+/* 
+-------------------------------------------------------
+-------------------------------------------------------
+<----------------styling for the footer--------------->
+-------------------------------------------------------
+-------------------------------------------------------
+*/
+footer{
+    border-top: solid 1px silver;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
