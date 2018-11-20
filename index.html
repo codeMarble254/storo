@@ -1,12 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="icon" type="image/png" href="https://res.cloudinary.com/dw675k0f5/image/upload/v1542700661/storo/500_F_139364024_oHjCfr2IAY7kOmzCgYCisW4lVqrXbcRG.jpg" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="static/style.css">
     <title>Home</title>
 </head>
+
 <body>
-    
+    <nav class="container-fluid row navbar bg-light sticky-top navbar-expand-md border-down shadow-sm">
+        <div class="col-md-7 col-sm-12 nav-logo">
+            <a href="#">
+                <i class="fas fa-stroopwafel"></i>&nbsp;
+                Storo
+            </a>
+            <button type="button" class="navbar-header navbar-toggle" data-toggle="collapse" aria-expanded="false"
+                data-target=".navbar-collapse">
+                <i class="fa fa-bars"></i>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+
+        <div class="col-md-5 col-sm-12 nav-menu">
+            <ul class="nav navbar-nav collapse navbar-collapse">
+                <li class="flex-sm-fill text-sm-center nav-item"><a class="nav-link" href="#"><i id="search-btn" class="fa fa-search"></i></a></li>
+                <li class="flex-sm-fill text-sm-center nav-item"><a class="nav-link" href="#">Join Us!</a></li>
+                <li class="flex-sm-fill text-sm-center nav-item"><a class="nav-link" href="#">Sign In</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section class="container-fluid">
+        <div class="card welcome-card">
+            <div class="card-body">
+                <h1 class="card-title">Welcome to Storo!</h1>
+                <p class="card-text">This is Storo, write something that interests you! And get millions of people to
+                    read about it! Awesome?
+                    <br>Here, you have the freedom to be creative. No bound, No Limits, Just be yourself!
+                    <br>
+                </p>
+                <a href="#" class="btn btn-primary">Get started now!</a>
+            </div>
+        </div>
+        <div class="row featured">
+            <div class="col-md-3 col-sm-12 card">
+                <img class="card-img-top" src="https://res.cloudinary.com/dw675k0f5/image/upload/v1542700661/storo/500_F_139364024_oHjCfr2IAY7kOmzCgYCisW4lVqrXbcRG.jpg"
+                    alt="Featured story">
+                <div class="card-body">
+                    <h5 class="card-title">Kenya under economic crisis</h5>
+                    <p class="card-text">Of late, the Kenyan economy has been threatened by a number of issues...</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago<br><i>@mary_gachathi</i></small></p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-12 card">
+                <img class="card-img-top" src="https://res.cloudinary.com/dw675k0f5/image/upload/v1542700661/storo/500_F_139364024_oHjCfr2IAY7kOmzCgYCisW4lVqrXbcRG.jpg"
+                    alt="Featured story">
+                <div class="card-body">
+                    <h5 class="card-title">Kenya under economic crisis</h5>
+                    <p class="card-text">Of late, the Kenyan economy has been threatened by a number of issues...</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago<br><i>@mary_gachathi</i></small></p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-12 card">
+                <img class="card-img-top" src="https://res.cloudinary.com/dw675k0f5/image/upload/v1542700661/storo/500_F_139364024_oHjCfr2IAY7kOmzCgYCisW4lVqrXbcRG.jpg"
+                    alt="Featured story">
+                <div class="card-body">
+                    <h5 class="card-title">Kenya under economic crisis</h5>
+                    <p class="card-text">Of late, the Kenyan economy has been threatened by a number of issues...</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago<br><i>@mary_gachathi</i></small></p>
+                </div>
+            </div>
+        </div><br>
+        <h2>Popular Stories</h2>
+        <hr>
+        <div class="row popular-stories">
+            <div class="col-md-3 popular-img">
+                <img src="https://res.cloudinary.com/dw675k0f5/image/upload/v1542700661/storo/500_F_139364024_oHjCfr2IAY7kOmzCgYCisW4lVqrXbcRG.jpg" />
+            </div>
+            <div class="col-md-9">
+                <h5 class="">Kenya under economic crisis</h5>
+                <p class="">Of late, the Kenyan economy has been threatened by a number
+                    of issues Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Nihil, dolor cum. Voluptatibus rerum assumenda quis! Eum ea nesciunt assumenda unde.
+                    Quae pariatur dignissimos tenetur optio a aperiam. Tenetur, nisi eaque!</p>
+                <p class=""><small class="text-muted">Last updated 3 mins ago<br><i>@mary_gachathi</i></small></p>
+            </div>
+        </div>
+        <div class="row popular-stories">
+            <div class="col-md-3 popular-img">
+                <img src="https://res.cloudinary.com/dw675k0f5/image/upload/v1542700661/storo/500_F_139364024_oHjCfr2IAY7kOmzCgYCisW4lVqrXbcRG.jpg" />
+            </div>
+            <div class="col-md-9">
+                <h5 class="">Kenya under economic crisis</h5>
+                <p class="">Of late, the Kenyan economy has been threatened by a number of issues...</p>
+                <p class=""><small class="text-muted">Last updated 3 mins ago<br><i>@mary_gachathi</i></small></p>
+            </div>
+        </div>
+        <div class="row popular-stories">
+            <div class="col-md-3 popular-img">
+                <img src="https://res.cloudinary.com/dw675k0f5/image/upload/v1542700661/storo/500_F_139364024_oHjCfr2IAY7kOmzCgYCisW4lVqrXbcRG.jpg" />
+            </div>
+            <div class="col-md-9">
+                <h5 class="">Kenya under economic crisis</h5>
+                <p class="">Lorem ipsum dolor sit amet consectetur,
+                    adipisicing elit. Repellendus numquam at explicabo et eligendi voluptas,
+                    molestias inventore aut magni quam blanditiis dolore architecto
+                    quas possimus necessitatibus modi cupiditate quod. Quis?...</p>
+                <p class=""><small class="text-muted">Last updated 3 mins ago<br><i>@mary_gachathi</i></small></p>
+            </div>
+            <div class="view-more">
+                <a href="#">
+                    <p>View More&nbsp;<span><i class="fa fa-arrow-right"></i></span></p>
+                </a>
+            </div>
+        </div>
+
+    </section>
+    <footer class="bg-light">
+        <div class="links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-google"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+        <div>&copy; CodeMarble254</div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="static/javascript/navigation.js"></script>
 </body>
+
 </html>

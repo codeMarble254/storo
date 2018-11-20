@@ -1,0 +1,163 @@
+/*Import fonts*/
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Condensed');
+
+
+/*
+--------------------------------------------------------
+--------------------------------------------------------
+------------sizing for all page components--------------
+--------------------------------------------------------
+--------------------------------------------------------
+*/
+* {
+    box-sizing: border-box;
+}
+
+*:before,
+*:after {
+box-sizing: border-box;
+}
+
+/*styling for the whole page*/
+html,body{
+    position: relative;
+    font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+/*styling for the main container*/
+
+body {
+    margin:0;
+    min-height: 100vh; /* will cover the 100% of viewport */
+    overflow: auto;
+    display: block;
+    position: relative;
+    width: 100%;
+    padding-bottom: 100px; /* height of your footer */
+}
+
+
+/* 
+-------------------------------------------------------
+-------------------------------------------------------
+-----------------Styles for html tags------------------
+-------------------------------------------------------
+-------------------------------------------------------
+*/
+a,p,label,h2,h3,h4,h5,h6{
+    color: #000;
+}
+h1{
+    text-shadow: 1px 1px 10px #000;
+    color: #fff;
+}
+.fa{
+    color: rgba(0, 0, 0, 0.5);
+}
+.fa-search{
+    font-size: 13px;
+}
+a, a:hover{
+    text-decoration: none;
+}
+
+
+/* 
+-------------------------------------------------------
+-------------------------------------------------------
+-----------------styling for the header----------------
+-------------------------------------------------------
+-------------------------------------------------------
+*/
+.navbar{
+    margin: 0;
+}
+.navbar-header{
+    display: none;
+}
+
+
+/* Set display on mobile devices */
+@media only screen and (max-width: 764px){
+    .navbar-header{
+        display: block;
+        float: right;
+        border: none;
+        background: silver;
+    }
+    .navbar .nav-menu .navbar-nav{
+        width: 100%;
+    }
+}
+
+
+/*settings for the logo */
+.nav-logo{
+    font-size: 28px;
+}
+.navbar .nav-menu .navbar-nav{
+    float: right;
+}
+.navbar .nav-menu .navbar-nav li a{
+    margin-left:10px;
+}
+
+
+/*styling for the section elements*/
+section{
+    width: 100%;
+    margin: auto;
+    padding: 1% 5%; 
+    text-align: center;
+}
+.welcome-card{
+    border: none;
+}
+.featured{
+    width: 80%;
+    margin: auto;
+}
+.featured .card{
+    margin: 0 2.7%;
+    cursor: pointer;
+    box-shadow: 1px 1px 10px silver;
+}
+.featured .card:hover{
+    box-shadow: none;
+}
+.popular-stories{
+    width: 76%;
+    margin: auto;
+    margin-top: 3%;
+    text-align: left;
+}
+.popular-img img{
+    width: 80%;
+    border: solid 1px silver;
+}
+.view-more{
+    padding:1% 3%;
+    text-align: right;
+    width: 100%;
+}
+
+
+/* 
+-------------------------------------------------------
+-------------------------------------------------------
+-----------------styling for the footer----------------
+-------------------------------------------------------
+-------------------------------------------------------
+*/
+footer{
+    border-top: solid 1px silver;
+    position: absolute;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+}
+.links i{
+    padding: 1%;
+}
+
