@@ -179,7 +179,6 @@ section{
 }
 .story img{
     width: 95%;
-    height: 500px;
     border: solid 1px #fff;
     border-radius: 6px;
     margin:auto;
@@ -189,13 +188,14 @@ section{
 }
 .profile{
     margin: auto;
-    width: 30%;
+    width: 100%;
+    overflow-wrap: break-word;
 }
 .story .profile .profile-pic{
     border-radius: 50%;
     border: solid 1px silver;
-    width:20%;
-    height: 5%;
+    width:60px;
+    height: 60px;
     margin:auto;
 }
 .profile .btn{
@@ -242,7 +242,7 @@ fieldset button{
     right:0;
     margin-right: 9.5%;
     position: fixed;
-    margin-bottom: 100px;
+    margin-bottom: 70px;
     border-radius: 0;
     height: 300px;
     background: inherit;
@@ -286,8 +286,9 @@ fieldset button{
     border-radius: 5px;
 }
 .comment-of-comment{
-    width: 90%;
-    margin-left: 10%;
+    width: 85%;
+    font-size: 12px;
+    margin-left: 15%;
 }
 /*Styliing for the ratings div*/
 .rating{
@@ -306,8 +307,8 @@ fieldset button{
     animation-duration: 1s;
 }
 @keyframes alter {
-    from {color: teal;}
-    to {color: gold;}
+    from {color: gold;}
+    to {color: #000;}
 }
 /* 
 -------------------------------------------------------
