@@ -1,4 +1,5 @@
 /*Import fonts*/
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
 @import url('https://fonts.googleapis.com/css?family=Ubuntu+Condensed');
 
 
@@ -28,12 +29,12 @@ html,body{
 
 body {
     margin:0;
-    min-height: 100vh; /* will cover the 100% of viewport */
+    min-height: 100vh;
     overflow: auto;
     display: block;
     position: relative;
     width: 100%;
-    padding-bottom: 100px; /* height of your footer */
+    padding-bottom: 100px;
 }
 
 
@@ -69,6 +70,10 @@ a, a:hover{
 -------------------------------------------------------
 -------------------------------------------------------
 */
+nav{
+    width: 100%;
+    margin: 0;
+}
 .navbar{
     margin: 0;
 }
@@ -76,18 +81,36 @@ a, a:hover{
     display: none;
 }
 
-
-/* Set display on mobile devices */
-@media only screen and (max-width: 764px){
-    .navbar-header{
-        display: block;
-        float: right;
-        border: none;
-        background: silver;
-    }
-    .navbar .nav-menu .navbar-nav{
-        width: 100%;
-    }
+/*Settings for the loader*/
+.loader-holder{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    left:0;
+    right: 0;
+    bottom:0;
+    top:0;
+    position: fixed;
+}
+.loader{
+    z-index: 1;
+    width: 50px;
+    height: 60px;
+    border-radius: 3px;
+    position: fixed;
+    left: 0;
+    right:0;
+    bottom: 0;
+    top:0;
+    margin: auto;
+    border: 2px solid rgb(39, 38, 38);
+    background: #fff;
+    animation: round 6s linear infinite;
+}
+@keyframes round{
+    from{transform:rotate(0deg)}
+    to{transform: rotate(180deg)}
 }
 
 
@@ -123,7 +146,7 @@ section{
     box-shadow: 1px 1px 10px silver;
 }
 .featured .card:hover{
-    box-shadow: none;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
 }
 .popular-stories{
     width: 76%;
@@ -132,8 +155,9 @@ section{
     text-align: left;
 }
 .popular-img img{
-    width: 80%;
+    width: 100%;
     border: solid 1px silver;
+    border-radius: 4px;
 }
 .view-more{
     padding:1% 3%;
@@ -141,7 +165,150 @@ section{
     width: 100%;
 }
 
+/* 
+-------------------------------------------------------
+-------------------------------------------------------
+------------styling for the single post page-----------
+-------------------------------------------------------
+-------------------------------------------------------
+*/
+.story{
+    margin: auto;
+    width: 70%;
+    padding: 1%;
+}
+.story img{
+    width: 95%;
+    height: 500px;
+    border: solid 1px #fff;
+    border-radius: 6px;
+    margin:auto;
+}
+.story p {
+    line-height: 2em;
+}
+.profile{
+    margin: auto;
+    width: 30%;
+}
+.story .profile .profile-pic{
+    border-radius: 50%;
+    border: solid 1px silver;
+    width:20%;
+    height: 5%;
+    margin:auto;
+}
+.profile .btn{
+    padding: 1px;
+    font-size: 10px;
+    float: left;
+}
+.button{
+    font-size: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    border: solid 1px gray;
+}
+.user-tag{
+    font-family: 'Dancing Script', cursive;
+    margin:0;
+    font-size: 20px;
+}
+fieldset button{
+    margin: 0.3%;
+}
+.options{
+    background: red;
+    width: 44px;
+    height: 44px;
+    color: white;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    float: left;
+    bottom: 0;
+    margin-bottom: 35px;
+    z-index: 1;
+    right:0;
+    margin-right: 7.5%;
+    position: fixed;
+    font-size: 22px
+}
+.options-list{
+    width: 4px;
+    border: none;
+    bottom: 0;
+    z-index: 1;
+    right:0;
+    margin-right: 9.5%;
+    position: fixed;
+    margin-bottom: 100px;
+    border-radius: 0;
+    height: 300px;
+    background: inherit;
+    display: none;
+    font-size: 20px;
+}
+.options-list i{
+    cursor: pointer;
+}
+.options:focus{
+    outline: none;
+}
 
+/*styling for comments */
+.comments{
+    width: 70%;
+    padding:0;
+    margin: auto;
+    text-align: left;
+}
+.comments textarea{
+    width: 100%;
+    border: none;
+}
+.comments textarea:focus{
+    outline: none;
+}
+.comments-icons{
+    text-align: right;
+}
+.comments .btn{
+    margin: 2%;
+    float: right;
+}
+.comment{
+    text-align: left;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 40px;
+    padding: 2%;
+    border-radius: 5px;
+}
+.comment-of-comment{
+    width: 90%;
+    margin-left: 10%;
+}
+/*Styliing for the ratings div*/
+.rating{
+    float: left;
+    margin-top: 7%;
+    margin-left: 4%;
+    position: fixed;
+}
+.rating i{
+    font-size: 22px;
+    padding: 10px;
+}
+.rating i:hover{
+    cursor: pointer;
+    animation-name: alter;
+    animation-duration: 1s;
+}
+@keyframes alter {
+    from {color: teal;}
+    to {color: gold;}
+}
 /* 
 -------------------------------------------------------
 -------------------------------------------------------
@@ -153,7 +320,6 @@ footer{
     border-top: solid 1px silver;
     position: absolute;
     bottom: 0;
-    height: 50px;
     width: 100%;
     text-align: center;
 }
@@ -161,3 +327,54 @@ footer{
     padding: 1%;
 }
 
+
+
+
+
+
+
+/* Set display on mobile devices */
+@media only screen and (max-width: 764px){
+    .navbar-header{
+        display: block;
+        float: right;
+        border: none;
+        background: silver;
+    }
+    .navbar .nav-menu .navbar-nav{
+        width: 100%;
+    }
+    section fieldset{
+        width: 80%;
+        margin: auto;
+        margin-top: 3%;
+    }
+    fieldset .btn{
+        padding: 2%;
+        font-size: 14px
+    }
+    .rating{
+        margin-left: 0;
+    }
+    .rating i{
+        font-size: 18px;
+    }
+    .options{
+        background: red;
+        width: 35px;
+        height: 35px;
+        color: white;
+        border-radius: 50%;
+        border: none;
+        cursor: pointer;
+        float: left;
+        margin-top: 25.5%;
+        right:0;
+        margin-right: 3.5%;
+        position: fixed;
+        font-size: 18px
+    }
+    .options-list{
+        font-size: 18px;
+    }
+}
