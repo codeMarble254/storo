@@ -1,5 +1,5 @@
 /*Import fonts*/
-@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+@import url('https://fonts.googleapis.com/css?family=Patrick+Hand');
 @import url('https://fonts.googleapis.com/css?family=Ubuntu+Condensed');
 
 
@@ -130,7 +130,8 @@ nav{
 section{
     width: 100%;
     margin: auto;
-    padding: 1% 5%; 
+    padding: 1% 5%;
+    margin-bottom: -50px; 
     text-align: center;
 }
 .welcome-card{
@@ -210,9 +211,10 @@ section{
     border: solid 1px gray;
 }
 .user-tag{
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Patrick Hand', cursive;
     margin:0;
-    font-size: 20px;
+    color: teal;
+    font-size: 14px;
 }
 fieldset button{
     margin: 0.3%;
@@ -230,7 +232,7 @@ fieldset button{
     margin-bottom: 35px;
     z-index: 1;
     right:0;
-    margin-right: 7.5%;
+    margin-right: 84px;
     position: fixed;
     font-size: 22px
 }
@@ -240,17 +242,20 @@ fieldset button{
     bottom: 0;
     z-index: 1;
     right:0;
-    margin-right: 9.5%;
+    margin-right: 110px;
     position: fixed;
-    margin-bottom: 70px;
+    margin-bottom: 75px;
     border-radius: 0;
-    height: 300px;
     background: inherit;
     display: none;
     font-size: 20px;
 }
 .options-list i{
     cursor: pointer;
+    margin-bottom: 25px;
+}
+.options-list i span{
+    font-size: 12px;
 }
 .options:focus{
     outline: none;
@@ -262,10 +267,12 @@ fieldset button{
     padding:0;
     margin: auto;
     text-align: left;
+    display: none;
 }
 .comments textarea{
     width: 100%;
     border: none;
+    height: 50px;
 }
 .comments textarea:focus{
     outline: none;
@@ -274,7 +281,7 @@ fieldset button{
     text-align: right;
 }
 .comments .btn{
-    margin: 2%;
+    margin: 0.3% 2%;
     float: right;
 }
 .comment{
@@ -290,26 +297,72 @@ fieldset button{
     font-size: 12px;
     margin-left: 15%;
 }
-/*Styliing for the ratings div*/
-.rating{
-    float: left;
-    margin-top: 7%;
-    margin-left: 4%;
-    position: fixed;
-}
-.rating i{
-    font-size: 22px;
-    padding: 10px;
-}
-.rating i:hover{
+#comment-button{
     cursor: pointer;
-    animation-name: alter;
-    animation-duration: 1s;
+    width: 70%;
+    margin: auto;
+    text-align: left;
 }
-@keyframes alter {
-    from {color: gold;}
-    to {color: #000;}
+
+/* styling for the signup modal */
+
+#signup-modal, #login-modal{
+    position:fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    z-index: 3000;
+    background: rgba(58, 58, 58, 0.8);
+    display: none;
 }
+.signup-content, .login-content{
+    background: white;
+    width: 50%;
+    height: 530px;
+    margin: auto;
+    padding: 2%;
+    margin-top: 30px;
+}
+.login-content{
+    padding: 3%;
+    height: 420px;
+    margin-top: 60px;
+}
+.signup-content input, .login-content input{
+    margin: 2%;
+}
+.signup-content .btn, .login-content .btn{
+    margin: 1%;
+}
+.signup-content form, .login-content form{
+    width: 70%;
+    margin: auto;
+}
+.signup-content .licence{
+    font-size: 12px;
+    width: 60%;
+    margin: 2% auto;
+}
+.close, .close-login {
+    color: #aaa;
+    float: right;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus,
+.close-login:hover,
+.close-login:focus {
+    color: red;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
 /* 
 -------------------------------------------------------
 -------------------------------------------------------
@@ -350,15 +403,12 @@ footer{
         margin: auto;
         margin-top: 3%;
     }
+    .featured .card{
+        margin-bottom: 30px; 
+    }
     fieldset .btn{
         padding: 2%;
         font-size: 14px
-    }
-    .rating{
-        margin-left: 0;
-    }
-    .rating i{
-        font-size: 18px;
     }
     .options{
         background: red;
@@ -369,13 +419,26 @@ footer{
         border: none;
         cursor: pointer;
         float: left;
-        margin-top: 25.5%;
+        margin-bottom: 10%;
         right:0;
-        margin-right: 3.5%;
+        margin-right: 20px;
         position: fixed;
-        font-size: 18px
+        font-size: 16px
     }
     .options-list{
-        font-size: 18px;
+        font-size: 20px;
+        margin-right: 40px;
+        margin-bottom: 20%;
+        z-index: 2000;
+    }
+    .options-list i{
+        margin-bottom: 18px;
+    }
+    .options-list i span{
+        font-size: 7px;
+    }
+    .signup-content, .login-content{
+        width: 95%;
+        overflow: auto;
     }
 }
