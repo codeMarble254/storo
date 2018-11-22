@@ -55,17 +55,13 @@
                 Entertainment
             </button>
         </fieldset>
-        <div class="rating">
-            <i class="fa fa-star"></i><br><i class="fa fa-star"></i><br>
-            <i class="fa fa-star"></i><br>
-            <i class="fa fa-star"></i><br><i class="fa fa-star"></i><br>
-        </div>
         <div class="options-list" id="options-list">
-            <i class="fab fa-facebook"></i><br><br>
-            <i class="fab fa-twitter"></i><br><br>
-            <i class="fab fa-google"></i><br><br>
-            <i class="fas fa-thumbs-up"></i><br><br>
-            <i class="fas fa-thumbs-down"></i>
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-google"></i>
+            <i class="fas fa-thumbs-up"><span class="text-muted">&nbsp;200</span></i>
+            <i class="fas fa-thumbs-down"><span class="text-muted">&nbsp;20</span></i>
+            <i class="fa fa-bookmark"></i>
         </div>
         <button class="options" id="options">
             <i class="fas fa-th"></i>
@@ -153,6 +149,7 @@
 
             </p>
         </div><br>
+
         <div class="comments-list">
             <h1>Comments</h1><br>
             <div class="comment card">
@@ -197,17 +194,19 @@
                     <p class=""><small class="text-muted">Posted 3 mins ago<br><a class="user-tag" href="#">@savali_jey</a></small></p>
                 </div>
             </div>
-        </div><br>
+        </div>
         <div class="comments">
             <div class="card">
-                <div class="card-header">
-                    Leave a Comment
-                </div>
                 <div>
-                    <textarea></textarea>
+                    <textarea placeholder="Type in your comment here"></textarea>
                     <button class="btn btn-primary">Post</button>
                 </div>
             </div>
+        </div>
+
+        <div id="comment-button">
+            <p>Leave a comment&nbsp;
+                <i class="fa fa-comment"></i></p>
         </div>
     </section>
     <div class="loader-holder">
