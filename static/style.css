@@ -130,7 +130,8 @@ nav{
 section{
     width: 100%;
     margin: auto;
-    padding: 1% 5%; 
+    padding: 1% 5%;
+    margin-bottom: -50px; 
     text-align: center;
 }
 .welcome-card{
@@ -231,7 +232,7 @@ fieldset button{
     margin-bottom: 35px;
     z-index: 1;
     right:0;
-    margin-right: 5.5%;
+    margin-right: 84px;
     position: fixed;
     font-size: 22px
 }
@@ -241,7 +242,7 @@ fieldset button{
     bottom: 0;
     z-index: 1;
     right:0;
-    margin-right: 7.5%;
+    margin-right: 110px;
     position: fixed;
     margin-bottom: 75px;
     border-radius: 0;
@@ -303,6 +304,65 @@ fieldset button{
     text-align: left;
 }
 
+/* styling for the signup modal */
+
+#signup-modal, #login-modal{
+    position:fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    z-index: 3000;
+    background: rgba(58, 58, 58, 0.8);
+    display: none;
+}
+.signup-content, .login-content{
+    background: white;
+    width: 50%;
+    height: 530px;
+    margin: auto;
+    padding: 2%;
+    margin-top: 30px;
+}
+.login-content{
+    padding: 3%;
+    height: 420px;
+    margin-top: 60px;
+}
+.signup-content input, .login-content input{
+    margin: 2%;
+}
+.signup-content .btn, .login-content .btn{
+    margin: 1%;
+}
+.signup-content form, .login-content form{
+    width: 70%;
+    margin: auto;
+}
+.signup-content .licence{
+    font-size: 12px;
+    width: 60%;
+    margin: 2% auto;
+}
+.close, .close-login {
+    color: #aaa;
+    float: right;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus,
+.close-login:hover,
+.close-login:focus {
+    color: red;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
 /* 
 -------------------------------------------------------
 -------------------------------------------------------
@@ -343,6 +403,9 @@ footer{
         margin: auto;
         margin-top: 3%;
     }
+    .featured .card{
+        margin-bottom: 30px; 
+    }
     fieldset .btn{
         padding: 2%;
         font-size: 14px
@@ -363,7 +426,7 @@ footer{
         font-size: 16px
     }
     .options-list{
-        font-size: 12px;
+        font-size: 20px;
         margin-right: 40px;
         margin-bottom: 20%;
         z-index: 2000;
@@ -373,5 +436,9 @@ footer{
     }
     .options-list i span{
         font-size: 7px;
+    }
+    .signup-content, .login-content{
+        width: 95%;
+        overflow: auto;
     }
 }
