@@ -365,7 +365,68 @@ fieldset button{
     cursor: pointer;
 }
 
+/* 
+-------------------------------------------------------
+-------------------------------------------------------
+-----------styling for the create content page---------
+-------------------------------------------------------
+-------------------------------------------------------
+*/
+.content-creation{
+    width: 70%;
+    padding: 3%;
+}
+.content-creation input{
+    margin: 4% auto;
+}
+.content-title,.content-title h1{
+    float: left;
+}
+.content-title input{
+    border: none;
+    border-bottom: 2px solid silver;
+    font-size: 40px;
+    padding: 0,2%;
+    width: 100%;
+}
+.content-title input:focus{
+    outline: none;
+    border-bottom: 2px solid rgb(80, 150, 146);
+}
+.content-body input{
+    width: 100%;
+    word-break: break-all;
+    font-size: 25px;
+    padding: 0.2%;
+    margin: 2% auto;
+    border: none;
+    border-bottom: 2px solid silver;
 
+}
+.content-body input:focus{
+    outline: none;
+    border-bottom: 2px solid rgb(80, 150, 146);
+}
+.content-save{
+    padding: 2%;
+    float: right;
+    width: 100%;
+}
+.content-save fieldset{
+    float: left;
+    width: 100%;
+}
+.content-save fieldset .btn, .content-save fieldset p{
+    float: left;
+}
+.content-save .util{
+    float: right;
+    display: flex;
+}
+.content-save .util .btn{
+    float: left;
+    margin: 2%;
+}
 /* 
 -------------------------------------------------------
 -------------------------------------------------------
@@ -408,10 +469,6 @@ footer{
     }
     .featured .card{
         margin-bottom: 30px; 
-    }
-    fieldset .btn{
-        padding: 2%;
-        font-size: 14px
     }
     .options{
         background: red;
