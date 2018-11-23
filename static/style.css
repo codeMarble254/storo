@@ -80,6 +80,20 @@ nav{
 .navbar-header{
     display: none;
 }
+/*settings for the logo */
+.nav-logo{
+    font-size: 28px;
+}
+.navbar .nav-menu .navbar-nav{
+    float: right;
+}
+.navbar .nav-menu .navbar-nav li a{
+    margin-left:10px;
+}
+.nav-list{
+    float: right;
+}   
+
 
 /*Settings for the loader*/
 .loader-holder{
@@ -112,19 +126,6 @@ nav{
     from{transform:rotate(0deg)}
     to{transform: rotate(180deg)}
 }
-
-
-/*settings for the logo */
-.nav-logo{
-    font-size: 28px;
-}
-.navbar .nav-menu .navbar-nav{
-    float: right;
-}
-.navbar .nav-menu .navbar-nav li a{
-    margin-left:10px;
-}
-
 
 /*styling for the section elements*/
 section{
@@ -192,7 +193,7 @@ section{
     width: 100%;
     overflow-wrap: break-word;
 }
-.story .profile .profile-pic{
+.story .profile .profile-pic, .profile-pic{
     border-radius: 50%;
     border: solid 1px silver;
     width:30px;
@@ -326,7 +327,7 @@ fieldset button{
     margin: auto;
     padding: 2%;
     margin-top: 30px;
-    border-radius: 3px;
+    border-radius: 6px;
 }
 .login-content{
     padding: 3%;
@@ -440,7 +441,10 @@ footer{
         font-size: 7px;
     }
     .signup-content, .login-content{
-        width: 95%;
+        width: 80%;
         overflow: auto;
+    }
+    .login-content{
+        width: 70%;
     }
 }
