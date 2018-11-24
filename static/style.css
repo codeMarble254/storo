@@ -156,7 +156,7 @@ section{
     margin-top: 3%;
     text-align: left;
 }
-.popular-img img{
+.popular-img img, .my-stories img{
     width: 100%;
     border: solid 1px silver;
     border-radius: 4px;
@@ -166,7 +166,53 @@ section{
     text-align: right;
     width: 100%;
 }
-
+.my-stories{
+    width: 100%;
+    margin: auto;
+    text-align: left;
+    margin-top: 3%;
+}
+.my-stories .body p{
+    width: 100%;
+}
+.my-stories .manipulate{
+    float: left;
+    width: 20%;
+}
+.my-stories .manipulate i{
+    margin: 0 4%;
+    color: #000;
+}
+.my-stories .view-more{
+    width: 100%;
+}
+.my-stories .view-more ul{
+    float: right;
+    margin-top: 2%;
+    padding-bottom: 0;
+}
+.semi-stats i{
+    font-size: 40px;
+}
+.semi-stats .fa-star{
+    color: gold;
+}
+.semi-stats .fa-pencil-alt{
+    color: rgb(145, 16, 127);
+}
+.semi-stats .fa-thumbs-up{
+    color: teal;
+}
+#stats table{
+    margin: auto;
+    margin: 3%;
+    width: 90%;
+    text-align: left;
+}
+#stats table tr td, #stats table tr th{
+    padding: 1%;
+    border: 1px solid silver;
+}
 /* 
 -------------------------------------------------------
 -------------------------------------------------------
@@ -297,7 +343,7 @@ fieldset button{
     width: 85%;
     font-size: 12px;
     margin-left: 15%;
-    border-left: 1px solid silver;
+    border-left: 1px solid rgba(192, 192, 192, 0.3);
     padding-left: 3%;
 }
 #comment-button{
@@ -384,31 +430,28 @@ fieldset button{
 }
 .content-title input{
     border: none;
-    border-bottom: 2px solid silver;
     font-size: 40px;
     padding: 0,2%;
     width: 100%;
 }
 .content-title input:focus{
     outline: none;
-    border-bottom: 2px solid rgb(80, 150, 146);
 }
 .content-body input{
     width: 100%;
-    word-break: break-all;
+    overflow-wrap: break-word;
     font-size: 25px;
     padding: 0.2%;
     margin: 2% auto;
     border: none;
-    border-bottom: 2px solid silver;
 
 }
 .content-body input:focus{
     outline: none;
-    border-bottom: 2px solid rgb(80, 150, 146);
 }
 .content-save{
-    padding: 2%;
+    padding: 2% 0;
+    margin: 5% auto;
     float: right;
     width: 100%;
 }
@@ -427,6 +470,37 @@ fieldset button{
     float: left;
     margin: 2%;
 }
+
+/* 
+-------------------------------------------------------
+-------------------------------------------------------
+-----------------styling for profile page--------------
+-------------------------------------------------------
+-------------------------------------------------------
+*/
+.full-profile{
+    width: 80%;
+}
+.semi-stats{
+    width: 100%;
+    margin: 3% auto;
+}
+.semi-stats img{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    border: 1px solid grey;
+}
+.semi-stats .rates{
+    margin-top: 3%;
+}
+.full-profile .detail{
+    float: left;
+}
+
+
+
+
 /* 
 -------------------------------------------------------
 -------------------------------------------------------
@@ -503,5 +577,8 @@ footer{
     }
     .login-content{
         width: 70%;
+    }
+    .full-profile{
+        width: 100%;
     }
 }
