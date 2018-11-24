@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="icon" type="image/png" href="https://res.cloudinary.com/dw675k0f5/image/upload/v1542700661/storo/500_F_139364024_oHjCfr2IAY7kOmzCgYCisW4lVqrXbcRG.jpg" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="static/style.css">
+    <title>Storo | Read</title>
+</head>
+
+<body onload="hideLoader()">
+    <nav class="container-fluid row navbar bg-light sticky-top navbar-expand-md border-down shadow-sm">
+        <div class="col-5 nav-logo">
+            <a href="index.html">
+                <i class="fas fa-stroopwafel"></i>&nbsp;
+                Storo
+            </a>
+        </div>
+
+        <div class="col-7">
+            <ul class="nav nav-list">
+                <li class="nav-item"><a class="nav-link" href="#"><i id="search-btn" class="fa fa-search"></i></a></li>
+                <div class="dropdown">
+                    <a data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link" href="#"><i
+                            class="fa fa-bell"></i></a>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <h6 class="dropdown-item dropdown-header">Notifications</h6>
+                        <hr>
+                        <a href="#" class="dropdown-item">Jemo liked your post!<br><span class="text-muted">5 sec ago</span></a>
+                        <a href="#" class="dropdown-item">Maria commented on your post!<br><span class="text-muted">2
+                                days ago</span></a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link" href="#"><i
+                            class="fa fa-bars"></i></a>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <a class="dropdown-item dropdown-header" href="profile.html">
+                            <img src="https://res.cloudinary.com/dw675k0f5/image/upload/v1542731095/storo/new.png"
+                                class="profile-pic">&nbsp; savalijey@gmail.com
+                        </a>
+                        <a class="dropdown-item" href="profile.html"><i class="fa fa-user"></i>&nbsp;&nbsp; View profile </a>
+                        <a class="dropdown-item" href="add-post.html"><i class="fa fa-pencil-alt"></i>&nbsp;&nbsp;Add
+                            post</a>
+                        <a class="dropdown-item" href="index.html"><i class="fa fa-power-off"></i>&nbsp;&nbsp;Logout</a>
+                    </div>
+                </div>
+            </ul>
+        </div>
+    </nav>
+    <section class="container-fluid content-creation">
+        <div class="content-title">
+            <input type="text" placeholder="Title" size=40>
+        </div>
+        <div class="content-body">
+            <input type="text" placeholder="Content">
+        </div>
+        <div class="content-save">
+            <fieldset>
+                <p>Select tags: &nbsp; &nbsp;</p>
+                <button type="button" class="btn btn-sm">
+                    Lifestyle
+                </button>
+                <button type="button" class="btn btn-sm">
+                    Passion
+                </button>
+                <button type="button" class="btn btn-sm">
+                    Technology
+                </button>
+                <span class="util">
+                    <button type="button" class="btn btn-info">Preview</button>
+                    <button type="button" class="btn btn-info">Save as draft</button>
+                    <button type="button" class="btn btn-info">Publish</button>
+                </span>
+            </fieldset>
+        </div>
+    </section>
+    <div class="loader-holder">
+        <div id="loader">
+            <div class="loader">
+                <div class="loader">
+                    <div class="loader">
+                        ---<br>
+                        ---<br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-light">
+        <div>&copy; CodeMarble254</div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="static/javascript/main.js"></script>
+</body>
+
+</html>

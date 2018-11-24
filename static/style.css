@@ -80,6 +80,20 @@ nav{
 .navbar-header{
     display: none;
 }
+/*settings for the logo */
+.nav-logo{
+    font-size: 28px;
+}
+.navbar .nav-menu .navbar-nav{
+    float: right;
+}
+.navbar .nav-menu .navbar-nav li a{
+    margin-left:10px;
+}
+.nav-list{
+    float: right;
+}   
+
 
 /*Settings for the loader*/
 .loader-holder{
@@ -113,19 +127,6 @@ nav{
     to{transform: rotate(180deg)}
 }
 
-
-/*settings for the logo */
-.nav-logo{
-    font-size: 28px;
-}
-.navbar .nav-menu .navbar-nav{
-    float: right;
-}
-.navbar .nav-menu .navbar-nav li a{
-    margin-left:10px;
-}
-
-
 /*styling for the section elements*/
 section{
     width: 100%;
@@ -155,7 +156,7 @@ section{
     margin-top: 3%;
     text-align: left;
 }
-.popular-img img{
+.popular-img img, .my-stories img{
     width: 100%;
     border: solid 1px silver;
     border-radius: 4px;
@@ -165,7 +166,53 @@ section{
     text-align: right;
     width: 100%;
 }
-
+.my-stories{
+    width: 100%;
+    margin: auto;
+    text-align: left;
+    margin-top: 3%;
+}
+.my-stories .body p{
+    width: 100%;
+}
+.my-stories .manipulate{
+    float: left;
+    width: 20%;
+}
+.my-stories .manipulate i{
+    margin: 0 4%;
+    color: #000;
+}
+.my-stories .view-more{
+    width: 100%;
+}
+.my-stories .view-more ul{
+    float: right;
+    margin-top: 2%;
+    padding-bottom: 0;
+}
+.semi-stats i{
+    font-size: 40px;
+}
+.semi-stats .fa-star{
+    color: gold;
+}
+.semi-stats .fa-pencil-alt{
+    color: rgb(145, 16, 127);
+}
+.semi-stats .fa-thumbs-up{
+    color: teal;
+}
+#stats table{
+    margin: auto;
+    margin: 3%;
+    width: 90%;
+    text-align: left;
+}
+#stats table tr td, #stats table tr th{
+    padding: 1%;
+    border: 1px solid silver;
+}
 /* 
 -------------------------------------------------------
 -------------------------------------------------------
@@ -192,11 +239,11 @@ section{
     width: 100%;
     overflow-wrap: break-word;
 }
-.story .profile .profile-pic{
+.story .profile .profile-pic, .profile-pic{
     border-radius: 50%;
     border: solid 1px silver;
-    width:60px;
-    height: 60px;
+    width:30px;
+    height: 30px;
     margin:auto;
 }
 .profile .btn{
@@ -277,7 +324,7 @@ fieldset button{
 .comments textarea:focus{
     outline: none;
 }
-.comments-icons{
+.comments-icons i{
     text-align: right;
 }
 .comments .btn{
@@ -296,6 +343,8 @@ fieldset button{
     width: 85%;
     font-size: 12px;
     margin-left: 15%;
+    border-left: 1px solid rgba(192, 192, 192, 0.3);
+    padding-left: 3%;
 }
 #comment-button{
     cursor: pointer;
@@ -308,8 +357,8 @@ fieldset button{
 
 #signup-modal, #login-modal{
     position:fixed;
+    overflow: auto;
     width: 100%;
-    height: 100%;
     left: 0;
     right: 0;
     bottom: 0;
@@ -320,15 +369,15 @@ fieldset button{
 }
 .signup-content, .login-content{
     background: white;
-    width: 50%;
-    height: 530px;
+    width: 40%;
     margin: auto;
     padding: 2%;
     margin-top: 30px;
+    border-radius: 6px;
 }
 .login-content{
     padding: 3%;
-    height: 420px;
+    width: 35%;
     margin-top: 60px;
 }
 .signup-content input, .login-content input{
@@ -361,6 +410,95 @@ fieldset button{
     text-decoration: none;
     cursor: pointer;
 }
+
+/* 
+-------------------------------------------------------
+-------------------------------------------------------
+-----------styling for the create content page---------
+-------------------------------------------------------
+-------------------------------------------------------
+*/
+.content-creation{
+    width: 70%;
+    padding: 3%;
+}
+.content-creation input{
+    margin: 4% auto;
+}
+.content-title,.content-title h1{
+    float: left;
+}
+.content-title input{
+    border: none;
+    font-size: 40px;
+    padding: 0,2%;
+    width: 100%;
+}
+.content-title input:focus{
+    outline: none;
+}
+.content-body input{
+    width: 100%;
+    overflow-wrap: break-word;
+    font-size: 25px;
+    padding: 0.2%;
+    margin: 2% auto;
+    border: none;
+
+}
+.content-body input:focus{
+    outline: none;
+}
+.content-save{
+    padding: 2% 0;
+    margin: 5% auto;
+    float: right;
+    width: 100%;
+}
+.content-save fieldset{
+    float: left;
+    width: 100%;
+}
+.content-save fieldset .btn, .content-save fieldset p{
+    float: left;
+}
+.content-save .util{
+    float: right;
+    display: flex;
+}
+.content-save .util .btn{
+    float: left;
+    margin: 2%;
+}
+
+/* 
+-------------------------------------------------------
+-------------------------------------------------------
+-----------------styling for profile page--------------
+-------------------------------------------------------
+-------------------------------------------------------
+*/
+.full-profile{
+    width: 80%;
+}
+.semi-stats{
+    width: 100%;
+    margin: 3% auto;
+}
+.semi-stats img{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    border: 1px solid grey;
+}
+.semi-stats .rates{
+    margin-top: 3%;
+}
+.full-profile .detail{
+    float: left;
+}
+
+
 
 
 /* 
@@ -406,10 +544,6 @@ footer{
     .featured .card{
         margin-bottom: 30px; 
     }
-    fieldset .btn{
-        padding: 2%;
-        font-size: 14px
-    }
     .options{
         background: red;
         width: 35px;
@@ -438,7 +572,13 @@ footer{
         font-size: 7px;
     }
     .signup-content, .login-content{
-        width: 95%;
+        width: 80%;
         overflow: auto;
+    }
+    .login-content{
+        width: 70%;
+    }
+    .full-profile{
+        width: 100%;
     }
 }

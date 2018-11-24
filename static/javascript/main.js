@@ -69,7 +69,7 @@ let login_content = `
 <div class="login-content">
 <span class="close-login">&times;</span>
 <form class="form-group">
-    <h1>Welcome</h1>
+    <h1>Welcome</h1><hr>
     <p>Sign in to access your personalized homepage,
         follow authors and topics you love,
         and like stories that matter to you.</p>
@@ -78,7 +78,7 @@ let login_content = `
     <button type="submit" class="btn btn-danger btn-sm">SignIn with Google +&nbsp;&nbsp;<i class="fab fa-google"></i></button>
     <button type="submit" class="btn btn-primary btn-sm">SignIn with Facebook&nbsp;&nbsp;<i class="fab fa-facebook"></i></button>
     <button type="submit" class="btn btn-info btn-sm">SignIn with Twitter&nbsp;&nbsp;<i class="fab fa-twitter"></i></button><br>
-    <button type="submit" class="btn btn-primary">Login</button>
+    <button type="submit" class="btn btn-primary"><a href="profile.html">Login</a></button>
 </form>
 </div>
  `
