@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="icon" type="image/png" href="https://res.cloudinary.com/dw675k0f5/image/upload/v1542700661/storo/500_F_139364024_oHjCfr2IAY7kOmzCgYCisW4lVqrXbcRG.jpg" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="static/style.css">
+    <title>Storo | Read</title>
+</head>
+
+<body onload="hideLoader()">
+    <nav class="container-fluid row navbar bg-light sticky-top navbar-expand-md border-down shadow-sm">
+        <div class="col-5 nav-logo">
+            <a href="index.html">
+                <i class="fas fa-stroopwafel"></i>&nbsp;
+                Storo
+            </a>
+        </div>
+
+        <div class="col-7">
+            <ul class="nav nav-list">
+                <li class="nav-item"><a class="nav-link" href="#"><i id="search-btn" class="fa fa-search"></i></a></li>
+                <div class="dropdown">
+                    <a data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link" href="#"><i
+                            class="fa fa-bell"></i></a>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <h6 class="dropdown-item dropdown-header">Notifications</h6>
+                        <hr>
+                        <a href="#" class="dropdown-item">Jemo liked your post!<br><span class="text-muted">5 sec ago</span></a>
+                        <a href="#" class="dropdown-item">Maria commented on your post!<br><span class="text-muted">2
+                                days ago</span></a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link" href="#"><i
+                            class="fa fa-bars"></i></a>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <a class="dropdown-item dropdown-header" href="profile.html">
+                            <img src="https://res.cloudinary.com/dw675k0f5/image/upload/v1542731095/storo/new.png"
+                                class="profile-pic">&nbsp; savalijey@gmail.com
+                        </a>
+                        <a class="dropdown-item" href="profile.html"><i class="fa fa-user"></i>&nbsp;&nbsp; View
+                            profile </a>
+                        <a class="dropdown-item" href="add-post.html"><i class="fa fa-pencil-alt"></i>&nbsp;&nbsp;Add
+                            post</a>
+                        <a class="dropdown-item" href="index.html"><i class="fa fa-power-off"></i>&nbsp;&nbsp;Logout</a>
+                    </div>
+                </div>
+            </ul>
+        </div>
+    </nav>
+    <section class="container-fluid">
+        <div class="full-profile container-fluid">
+            <div class="semi-stats">
+                <div class="row">
+                    <span class="col-md-3 col-sm-12">
+                        <img class="" src="https://res.cloudinary.com/dw675k0f5/image/upload/v1542778725/storo/mercedes-amg-s-63-coupe.jpg"
+                            alt="Profile pic"><br>
+                        <label><small class="user-tag">@mary gachathi</label></small><br>
+                        A tech enthusiast with the will of a cat and the might of a horse.
+                        </p>
+                        <button class="btn btn-sm btn-info">Edit profile</button>
+                    </span>
+                    <span class="col-md-3 col-sm-4 rates">
+                        <h6>Level</h6>
+                        <hr>
+                        <label><i class="fa fa-star"></i><br><br>
+                            <h4>Novice</h4>
+                        </label>
+                    </span>
+                    <span class="col-md-3 col-sm-4 rates">
+                        <h6>Articles</h6>
+                        <hr>
+                        <label><i class="fa fa-pencil-alt"></i><br><br>
+                            <h4>20</h4>
+                        </label>
+                    </span>
+                    <span class="col-md-3 col-sm-4 rates">
+                        <h6>Likes</h6>
+                        <hr>
+                        <label><i class="fa fa-thumbs-up"></i><br><br>
+                            <h4>450</h4>
+                        </label>
+                    </span>
+                </div>
+            </div>
+            <div class="my-posts">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item active">
+                        <a class="nav-link active" id="posts-tab" data-toggle="tab" href="#posts" role="tab"
+                            aria-controls="posts" aria-selected="true">My posts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="drafts-tab" data-toggle="tab" href="#drafts" role="tab" aria-controls="posts"
+                            aria-selected="true">Drafts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="stats-tab" data-toggle="tab" href="#stats" role="tab" aria-controls="stats"
+                            aria-selected="false">Stats</a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade" id="drafts" role="tabpanel" aria-labelledby="drafts-tab">
+                        <div class="row my-stories">
+                            <div class="col-md-3 popular-img">
+                                <img src="https://res.cloudinary.com/dw675k0f5/image/upload/v1542700661/storo/500_F_139364024_oHjCfr2IAY7kOmzCgYCisW4lVqrXbcRG.jpg" />
+                            </div>
+                            <div class="col-md-9 body">
+                                <a href="post.html">
+                                    <h5 class="">Kenya under economic crisis</h5>
+                                    <p class="">Of late, the Kenyan economy has been threatened by a number
+                                        of issues Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Nihil, dolor cum. Voluptatibus rerum assumenda quis! Eum ea nesciunt assumenda
+                                        unde.
+                                        Quae pariatur dignissimos tenetur optio a aperiam. Tenetur, nisi eaque!</p>
+                                    <p class=""><small class="text-muted">Last updated 3 mins ago</small>
+                                        <span class="manipulate"><i class="fa fa-pencil-alt"></i>&nbsp;&nbsp;<i class="fa fa-trash"></i></span></p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade show active" id="posts" role="tabpanel" aria-labelledby="posts-tab">
+                        <div class="row my-stories">
+                            <div class="col-md-3 popular-img">
+                                <img src="https://res.cloudinary.com/dw675k0f5/image/upload/v1542700661/storo/500_F_139364024_oHjCfr2IAY7kOmzCgYCisW4lVqrXbcRG.jpg" />
+                            </div>
+                            <div class="col-md-9 body">
+                                <a href="post.html">
+                                    <h5 class="">Kenya under economic crisis</h5>
+                                    <p class="">Of late, the Kenyan economy has been threatened by a number
+                                        of issues Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Nihil, dolor cum. Voluptatibus rerum assumenda quis! Eum ea nesciunt assumenda
+                                        unde.
+                                        Quae pariatur dignissimos tenetur optio a aperiam. Tenetur, nisi eaque!</p>
+                                    <p class=""><small class="text-muted">Last updated 3 mins ago</small>
+                                        <span class="manipulate"><i class="fa fa-pencil-alt"></i>&nbsp;&nbsp;<i class="fa fa-trash"></i></span></p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row my-stories">
+                            <div class="col-md-3 popular-img">
+                                <img src="https://res.cloudinary.com/dw675k0f5/image/upload/v1542700661/storo/500_F_139364024_oHjCfr2IAY7kOmzCgYCisW4lVqrXbcRG.jpg" />
+                            </div>
+                            <a href="post.html">
+                                <div class="col-md-9 body">
+                                    <h5 class="">Kenya under economic crisis</h5>
+                                    <p class="">Of late, the Kenyan economy has been threatened by a number of
+                                        issues...</p>
+                                    <p class=""><small class="text-muted">Last updated 3 mins ago</small>
+                                        <span class="manipulate"><i class="fa fa-pencil-alt"></i>&nbsp;&nbsp;<i class="fa fa-trash"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="row my-stories">
+                            <div class="col-md-3 popular-img">
+                                <img src="https://res.cloudinary.com/dw675k0f5/image/upload/v1542700661/storo/500_F_139364024_oHjCfr2IAY7kOmzCgYCisW4lVqrXbcRG.jpg" />
+                            </div>
+                            <div class="col-md-9 body">
+                                <a href="post.html">
+                                    <h5 class="">Kenya under economic crisis</h5>
+                                    <p class="">Lorem ipsum dolor sit amet consectetur,
+                                        adipisicing elit. Repellendus numquam at explicabo et eligendi voluptas,
+                                        molestias inventore aut magni quam blanditiis dolore architecto
+                                        quas possimus necessitatibus modi cupiditate quod. Quis?...</p>
+                                    <p class=""><small class="text-muted">Last updated 3 mins ago</small>
+                                        <span class="manipulate"><i class="fa fa-pencil-alt"></i>&nbsp;&nbsp;<i class="fa fa-trash"></i></span></p>
+                            </div>
+                            </a>
+                            <div class="view-more">
+                                <ul class="pagination">
+                                    <li class="page-item disabled">
+                                        <span class="page-link">Previous</span>
+                                    </li>
+                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item active">
+                                        <span class="page-link">
+                                            2
+                                            <span class="sr-only">(current)</span>
+                                        </span>
+                                    </li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">Next</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="stats" role="tabpanel" aria-labelledby="stats-tab">
+                        <table>
+                            <th>Story</th>
+                            <th>Views</th>
+                            <th>Fans</th>
+                            <th>Comments</th>
+                            <tr>
+                                <td>
+                                    <h5>Kenya under economic crisis</h5>
+                                </td>
+                                <td>20</td>
+                                <td>30</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h5>Matiangi resigns</h5>
+                                </td>
+                                <td>20</td>
+                                <td>30</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h5>MMu graduation</h5>
+                                </td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>1</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="loader-holder">
+        <div id="loader">
+            <div class="loader">
+                <div class="loader">
+                    <div class="loader">
+                        ---<br>
+                        ---<br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-light">
+        <div>&copy; CodeMarble254</div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="static/javascript/main.js"></script>
+</body>
+
+</html>
